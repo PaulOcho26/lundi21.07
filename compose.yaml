@@ -1,0 +1,9 @@
+services:
+  app-service:
+    image: php:8.2-apache
+    container_name: lundi21.07_container
+    ports:
+      - "8004:80"
+    volumes:
+      - .:/var/www/html
+
